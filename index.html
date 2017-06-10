@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+<script src='js/knockout-3.4.2.js'></script>
   <title>Tournament Clock</title>
 </head>
 <body>
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8" data-bind="with: currentTournament">
+        <h2 data-bind="text: tournamentType">
+        <h1 data-bind="text: time">
+        <h3 data-bind="text: blinds">
+        <h4>NEXT BLINDS</h4>
+        <h4 data-bind="text: nextBlinds">
+        <h4>AVERAGE STACK</h4>
+        <h4 data-bind="text: averageStack"></h4>
+        <h4>NEXT BREAK</h4>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
 
   <h1>Framework Test Page</h1>
   <h1 id="time"></h1>
   <p>
     Test Paragraph
   </p>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
