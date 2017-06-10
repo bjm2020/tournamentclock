@@ -11,8 +11,8 @@
     </div>
     <div class="col-md-8" data-bind="with: currentTournament">
         <h2 data-bind="text: tournamentType">
-        <h1 data-bind="text: time">
-        <h3 data-bind="text: blinds">
+        <h1 data-bind="text: time, click: $parent.startClock">
+        <h3 data-bind="text: blinds, click: increaseBlinds">
         <h4>NEXT BLINDS</h4>
         <h4 data-bind="text: nextBlinds">
         <h4>AVERAGE STACK</h4>
